@@ -1,24 +1,30 @@
-# Project name here
-> Summary description here.
+# Deck of Cards
+> A deck of cards
 
-
-This file will become your README and also the index of your documentation.
 
 ## Install
 
-`pip install your_project_name`
+After cloning this repository:
+
+pip install -e .
 
 ## How to use
 
-Fill me in please! Don't forget code examples:
+Playing cards in python!
 
 ```python
-1+1
+from deck_of_cards.deck import Deck
+d = Deck()
+print(f'Number of playing cards in the deck: {len(d.cards)}')
 ```
 
+    Number of playing cards in the deck: 52
 
 
+```python
+card = d.pop_card()
+print(card)
+```
 
-    2
-
+    Queen of Spades
 
